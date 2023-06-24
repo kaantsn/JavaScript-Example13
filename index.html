@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="input-container" class="container">
+    <h2>YKS Puan Hesaplama</h2>
+    <table>
+      <tr>
+        <td>TYT doğru cevap sayısı:</td>
+        <td><input type="number" id="tyt-correct-answers"></td>
+      </tr>
+      <tr>
+        <td>AYT doğru cevap sayısı:</td>
+        <td><input type="number" id="ayt-correct-answers"></td>
+      </tr>
+      <tr>
+        <td>YDT doğru cevap sayısı:</td>
+        <td><input type="number" id="ydt-correct-answers"></td>
+      </tr>
+      <tr>
+        <td>Okul notu:</td>
+        <td><input type="number" id="school-grade"></td>
+      </tr>
+    </table>
+    <button onclick="calculateScores()">Hesapla</button>
+  </div>
+
+  <div id="output-container" class="container">
+    <h2>Puanlar</h2>
+    <table id="score-table">
+      <tr>
+        <th>Alan</th>
+        <th>Puan</th>
+      </tr>
+      <tr>
+        <td>TYT</td>
+        <td id="tyt-score"></td>
+      </tr>
+      <tr>
+        <td>AYT</td>
+        <td id="ayt-score"></td>
+      </tr>
+      <tr>
+        <td>YDT</td>
+        <td id="ydt-score"></td>
+      </tr>
+      <tr>
+        <td>Okul Puanı</td>
+        <td id="school-score"></td>
+      </tr>
+      <tr>
+        <td>Toplam Puan</td>
+        <td id="total-score"></td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
